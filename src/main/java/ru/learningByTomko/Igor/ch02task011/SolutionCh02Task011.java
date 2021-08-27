@@ -7,8 +7,9 @@ public class SolutionCh02Task011 {
         Scanner scanner = new Scanner(System.in);
         System.out.println(reversNumber(scanner.nextInt()));
     }
+
     // 2.11 Дано двузначное число. Получить число, образованное при перестановке цифр заданного числа
-    public static int reversNumber (int number){
-        return (number % 10) + (number / 100);
+    public static int reversNumber(int number) {
+        return (number % 10 * 10) + (number / 10);
     }
 }
