@@ -9,6 +9,7 @@ import ru.learningByTomko.Igor.ch09task076.SolutionCh09Task076Test;
 import ru.learningByTomko.Igor.ch09task086.SolutionCh09Task086Test;
 import ru.learningByTomko.Igor.ch09task090.SolutionCh09Task090Test;
 import ru.learningByTomko.Igor.ch09task100.SolutionCh09Task100Test;
+import ru.learningByTomko.Igor.ch09task102.SolutionCh09Task102Test;
 
 public class TestSuite {
     public static void main(String[] args) {
@@ -30,6 +31,8 @@ public class TestSuite {
         SolutionCh09Task090Test.main(args);
         System.out.println("--------------");
         SolutionCh09Task100Test.main(args);
+        System.out.println("--------------");
+        SolutionCh09Task102Test.main(args);
 
     }
 }
