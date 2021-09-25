@@ -1,5 +1,7 @@
 package ru.learningByTomko.Igor;
 
+import java.util.Arrays;
+
 public class Assertion {
 
     public static void assertEquals(String testName, int expected, int actual){
@@ -23,4 +25,21 @@ public class Assertion {
             System.out.println(testName + " failed: expected "+ expected + ", actual " + actual);
         }
     }
+    public static void assertEquals(String testName, Object[] expected, Object[] actual){
+        if (Arrays.equals(expected,actual)){
+            System.out.println(testName + " passed");
+        } else{
+            System.out.println(testName + " failed: expected "+ Arrays.toString(expected) + ", actual " + Arrays.toString(actual));
+        }
+
+    }
+    public static void assertEquals(String testName, String expected, char actual){
+        if (expected.equals(String.valueOf(actual))){
+            System.out.println(testName + " passed");
+        } else{
+            System.out.println(testName + " failed: expected "+ expected + ", actual " + actual);
+        }
+    }
+
+
 }
